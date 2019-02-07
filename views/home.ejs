@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" type="image/png"   href="">
+    </head>
+    <body>
+        <div class="login-page">
+                <div class="form">
+        <form method="POST" class="register-form" >
+            <input type="text" name="username"  placeholder="user name"/>
+            <input type="text" name="email" placeholder="email"/>
+            <input type="password" name='password' placeholder="password"/>
+            <input type="submit" style="background-color: green" name='create'/>
+            <p class="message">Already Registered? <a href="/auth/login" style="color: black">Log in</a> </p>
+            <li style="list-style-type: none;transform: translate(-20px,0px)"> <a class="google-btn" href="/auth/google">Google</a></li>
+          
+        </form>
+
+        <form class="login-form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <button>Log in</button>
+            <p class='message' >Not Registered? <a href="#" >Sign up</a></p>
+            <li style="list-style-type: none"> <a class="google-btn" href="/auth/google">Google</a></li>
+           
+        </form>
+
+        <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+        <script>
+        $('.message a').click(function(){
+        $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+        });
+        
+        </script>
+    
+</div>
+</div>
+</body>
+</html>
